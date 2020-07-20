@@ -1,5 +1,5 @@
-var chai = require('chai');
-var sinon = require('sinon');
+// var chai = require('chai');
+// var sinon = require('sinon');
 // change to give addresses of head,
 // write function called get head.
 
@@ -66,8 +66,8 @@ describe('#addressAt', function(){
     let lastNode = {name: 'charlie', next: null}
     let collection = {rkjasj: secondNode, asnan: lastNode, whana: firstNode}
     let linkedList = 'whana'
-    expect(addressAt(1, linkedList, collection)).toEqual('rkjasj')
     expect(addressAt(0, linkedList, collection)).toEqual('whana')
+    expect(addressAt(1, linkedList, collection)).toEqual('rkjasj')
 
   })
 })
